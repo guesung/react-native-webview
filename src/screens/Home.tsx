@@ -30,7 +30,6 @@ const Home = () => {
         ) : null,
 
       headerRight: () => (
-        //<-----------headerRight 추가
         <TouchableOpacity
           style={{marginRight: 13}}
           onPress={() => navigation.navigate('Settings')}>
@@ -48,7 +47,7 @@ const Home = () => {
 
   return (
     <WebView
-      source={{uri: 'https://naver.com'}}
+      source={{uri: 'https://atties.vercel.app'}}
       ref={ref}
       onNavigationStateChange={e => setNavState(e)}
     />
